@@ -6,22 +6,26 @@ A script to automatically download and install the drivers for the tp-link TL-WN
 * Download the installer script by cloning this repository;
 
     ```shell
-    $ git clone https://smartcow.dev/SmartCow/Jetson-TL-WN823N-drivers.git
+    git clone https://github.com/SmartCowAi/Jetson-WifiDongle-Drivers.git
     ```
+* Or downloading the script on its own;
+    ```shell
+    wget https://github.com/SmartCowAi/Jetson-WifiDongle-Drivers/blob/main/install_script.sh
+
 * Run the script
 
     ```shell
-    $ cd Jetson-TL-WN823N-drivers
-    $ sudo chmod +x install_script.sh
-    $ sudo ./install_script.sh
+    cd Jetson-TL-WN823N-drivers
+    sudo chmod +x install_script.sh
+    sudo ./install_script.sh
     ```
  * Reboot the Jetson
     ```shell
-    $ systemctl reboot -i
+    systemctl reboot -i
     ```
  * Verify driver installation
     ```shell
-    $ sudo lshw -c network
+    sudo lshw -c network
     ```
     
     If the driver was installed correctly, the above command will list the usb device, with the parameter _driver=rtl8192eu_
