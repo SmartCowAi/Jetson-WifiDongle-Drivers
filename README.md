@@ -10,7 +10,7 @@ A script to automatically download and install the drivers for the tp-link TL-WN
     ```
 * Or downloading the script on its own;
     ```shell
-    wget https://github.com/SmartCowAi/Jetson-WifiDongle-Drivers/blob/main/install_script.sh
+    wget https://raw.githubusercontent.com/SmartCowAi/Jetson-WifiDongle-Drivers/main/install_script.sh
 
 * Run the script
 
